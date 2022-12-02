@@ -1,5 +1,7 @@
 package com.aronstrandberg
-package advent
+package advent.calories
+
+import advent.Problem
 
 import org.parboiled2.{CharPredicate, Parser, ParserInput, Rule0, Rule1}
 

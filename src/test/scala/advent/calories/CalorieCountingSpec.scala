@@ -1,5 +1,5 @@
 package com.aronstrandberg
-package advent
+package advent.calories
 
 import org.scalatest.flatspec.AnyFlatSpec
 
@@ -45,3 +45,11 @@ val parsed = CalorieCountInput(
 val minimal = "1000"
 
 val minimalParsed = CalorieCountInput(Seq(CalorieCountValue(Seq(1000))))
+
+//abstract class ProblemSpec[Prob <: Problem[Any, Solution], Solution](prob: Prob, name: String, input: String, result: Solution) extends AnyFlatSpec {
+//  name should s"return $result" in {
+//    assert(prob.run((input)) == result)
+//  }
+//}
+
+// object Problem1Spec extends ProblemSpec[Problem1, Int]
