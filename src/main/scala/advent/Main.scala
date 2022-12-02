@@ -17,5 +17,6 @@ object Runner {
 
 object Main {
   def main(args: Array[String]): Unit = {
+    Runner.run(TopCalorieCounting())
   }
 }
