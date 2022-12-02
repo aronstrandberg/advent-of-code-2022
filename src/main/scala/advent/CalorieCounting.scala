@@ -62,6 +62,6 @@ class CalorieCounting extends CalorieCountingProblem {
  */
 class TopCalorieCounting extends CalorieCountingProblem {
   override def solve(input: CalorieCountInput): Int = {
-    input.counts.map(_.items.sum).sorted.reverse.take(3).sum
+    input.counts.map(_.items.sum).sorted(Ordering.Int.reverse).take(3).sum
   }
 }
