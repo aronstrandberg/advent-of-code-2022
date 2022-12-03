@@ -21,9 +21,7 @@ class GroupedRucksackOrganization extends Problem[GroupedRucksackInput, Int]:
     val groups = input.split("\n").toSeq
       .map(new RucksackContents(_))
       .grouped(3)
-      .map(_ match
-        case Seq(a: RucksackContents, b: RucksackContents, c: RucksackContents) => (a, b, c)
-      )
+      .map({ case Seq(a: RucksackContents, b: RucksackContents, c: RucksackContents) => (a, b, c) })
       .map(RucksackGroup.apply)
       .toSeq
     GroupedRucksackInput(groups)
