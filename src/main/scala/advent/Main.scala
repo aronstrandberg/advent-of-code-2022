@@ -1,6 +1,8 @@
 package com.aronstrandberg
 package advent
 
+import advent.cleanup.Cleanup
+
 import scala.io.Source.stdin
 
 object Runner {
@@ -17,6 +19,6 @@ object Runner {
 
 object Main {
   def main(args: Array[String]): Unit = {
-    Runner.run(TopCalorieCounting())
+    Runner.run(Cleanup())
   }
 }
